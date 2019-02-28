@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  mode: "development",
+  mode: "delevopment",
   entry: "./containers/App.jsx",
   output: {
     path: path.resolve(__dirname, "build"),

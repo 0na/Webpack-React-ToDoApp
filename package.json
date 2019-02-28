@@ -26,8 +26,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "start": "webpack"
+    "build": "webpack --mode development",
+    "start": "webpack ./containers/App.jsx --output app.bundle.js"
   },
   "repository": {
     "type": "git",
