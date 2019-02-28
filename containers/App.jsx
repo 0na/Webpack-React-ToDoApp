@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import uuid from "uuid"; //trzeba zainstalowac przez npm  npm install --save uuid
 import style from "./App.css"; //importuje z pliku css z tego samego folderu
 
