@@ -1,7 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import uuid from "uuid"; //trzeba zainstalowac przez npm  npm install --save uuid
 import style from "./App.css"; //importuje z pliku css z tego samego folderu
+
+//tu chyba tez bedzie sie importowalo title ????
 
 class App extends React.Component {
   constructor(props) {
@@ -47,7 +48,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-var app = React.createElement(App);
-
-ReactDOM.render(app, document.getElementById("app"));

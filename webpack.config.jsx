@@ -2,13 +2,13 @@ const path = require("path");
 
 module.exports = {
   mode: "delevopment",
-  resolve: {
-    extensions: [".js", ".jsx"]
-  },
-  entry: "./containers/App.jsx",
+  // resolve: {
+  //   extensions: [".js", ".jsx"]
+  //},
+  entry: "./src/index.jsx",
   output: {
     path: path.resolve(__dirname, "build"),
-    filename: "app.bundle.js"
+    filename: "index.bundle.js"
   },
   //obiekt — module. Jego zadanie polega na wpływaniu na moduły, które bezpośrednio ładujemy jako zależności naszej aplikacji. Przeważnie jedynym parametrem, który będzie wpływał na moduły, będzie parametr rules.
   module: {

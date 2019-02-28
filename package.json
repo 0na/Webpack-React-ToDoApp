@@ -2,7 +2,7 @@
   "name": "webpack-configuration",
   "version": "1.0.0",
   "description": "",
-  "main": "./containers/App.jsx",
+  "main": "./src/index.js",
   "dependencies": {
     "uuid": "^3.3.2"
   },
@@ -22,18 +22,6 @@
     "webpack-cli": "^3.2.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode development",
-    "start": "webpack ./containers/App.jsx --output app.bundle.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/0na/Webpack-Configuration.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/0na/Webpack-Configuration/issues"
-  },
-  "homepage": "https://github.com/0na/Webpack-Configuration#readme"
+    "start": "webpack"
+  }
 }
