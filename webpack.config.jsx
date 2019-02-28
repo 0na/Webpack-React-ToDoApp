@@ -2,6 +2,9 @@ const path = require("path");
 
 module.exports = {
   mode: "delevopment",
+  resolve: {
+    extensions: [".js", ".jsx"]
+  },
   entry: "./containers/App.jsx",
   output: {
     path: path.resolve(__dirname, "build"),
