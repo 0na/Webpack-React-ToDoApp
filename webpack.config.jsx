@@ -1,6 +1,7 @@
 const path = require("path");
 
 module.exports = {
+  mode: "development", //sama dodalam
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "build"),

@@ -1,7 +1,6 @@
 import React from "react";
-import uuid from "uuid"; //trzeba zainstalowac przez npm  npm install --save uuid
-import style from "./App.css"; //importuje z pliku css z tego samego folderu
-
+import uuid from "uuid"; //unikalne id
+import style from "./App.css";
 //tu chyba tez bedzie sie importowalo title ????
 
 class App extends React.Component {
