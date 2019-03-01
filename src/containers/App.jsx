@@ -1,9 +1,9 @@
 import React from "react";
 import uuid from "uuid";
 import style from "./App.css";
-import Title from "../components/Title.jsx";
+import Title from "../components/Title";
 //import TodoForm from "../components/TodoForm.js";
-import TodoList from "../components/TodoList.jsx";
+import TodoList from "../components/TodoList";
 
 class App extends Component {
   constructor(props) {
@@ -47,7 +47,7 @@ class App extends Component {
     return (
       <div className={style.TodoApp}>
         <Title title={"To do"} />
-        <TodoList data={this.state.TodoList} />
+        <TodoList data={this.state.data} />
       </div>
     );
   }

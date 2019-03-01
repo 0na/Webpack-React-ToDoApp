@@ -2,10 +2,11 @@ import React from "react";
 //import style from "./Title.css";
 
 const Title = props => <h1>{props.title}</h1>;
+
 export default Title;
 
 // const Title = props => (
-//   <div className={style.container}>
+//   <div cl dassName={style.container}>
 //     <h1 className={style.title}> Lista moich zadań </h1>{"
 //     <h5 className={style.left}>
 //       {" "}
