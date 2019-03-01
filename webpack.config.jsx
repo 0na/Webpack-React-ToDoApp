@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const OptimizeJsPlugin = require("optimize-js-plugin");
 const plugins = [
   new HtmlWebpackPlugin({
-    template: "./src/index.html",
+    template: "src/index.html",
     filename: "index.html",
     inject: "body"
   })
@@ -46,10 +46,10 @@ module.exports = env => {
           }
         ]
       },
-      optimization: {
-        minimize: false // w trybie produkcyjnym kod jest domyślnie minifikowany. W trybie produkcyjnym jest domyślnie ustawione na true.
-        //      minimizer: [new UglifyJsPlugin()] -brzydki kod
-      },
+      //    optimization: {
+      //      minimize: false // w trybie produkcyjnym kod jest domyślnie minifikowany. W trybie produkcyjnym jest domyślnie ustawione na true.
+      //      minimizer: [new UglifyJsPlugin()] -brzydki kod
+      //    },
       plugins: plugins
     };
   }
