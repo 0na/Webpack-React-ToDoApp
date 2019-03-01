@@ -46,9 +46,8 @@ class App extends Component {
   render() {
     return (
       <div className={style.TodoApp}>
-        <Title left={this.state.left} />
-        <TodoList left={this.state.TodoList} />
-        // Tutaj pojawią się komponenty{" "}
+        <Title title={"To do"} />
+        <TodoList data={this.state.TodoList} />
       </div>
     );
   }
