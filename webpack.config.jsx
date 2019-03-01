@@ -17,7 +17,8 @@ module.exports = env => {
       })
     );
     return {
-      mode: env || "production" || "development",
+      mode: env,
+      //|| "production" || "development",
       entry: "./src/index.js",
       output: {
         path: path.resolve(__dirname, "build"),
