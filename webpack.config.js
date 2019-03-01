@@ -1,22 +1,23 @@
 const path = require('path');
 
 module.exports = {
+    mode: 'development',
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'app.bundle.js'
     },
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: "babel-loader"
             },
             {
                 test: /\.css$/,
-                use: [
-                    { loader: 'style-loader'},
+                use: [{
+                        loader: 'style-loader'
+                    },
                     {
                         loader: 'css-loader',
                         options: {
