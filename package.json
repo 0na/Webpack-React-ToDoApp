@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --env development",
-    "start": "webpack --env production"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --mode production"
   },
   "author": "",
   "license": "ISC",
@@ -20,10 +20,8 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "style-loader": "^0.23.1",
-    "uglifyjs-webpack-plugin": "^2.1.2",
     "webpack": "^4.28.3",
-    "webpack-cli": "^3.2.0",
-    "webpack-dev-server": "^3.2.1"
+    "webpack-cli": "^3.2.0"
   },
   "dependencies": {
     "uuid": "^3.3.2"
