@@ -1,17 +1,14 @@
-import React from 'react';
+import React from "react";
 // import './Todo.css';
 
-const todo = (props) => ( <
-    li className = "todo" >
-    <
-    span className = "todoName" > {
-        props.name
-    } < /span> <
-    span className = "todoButton" > < button onClick = {
-        () => props.removetodo(props.id)
-    } > X < /button></span >
-    <
-    /li>
+const Todo = props => (
+  <li className='Todo'>
+    <span className='TodoName'> {props.name} </span>{" "}
+    <span className='TodoButton'>
+      {" "}
+      <button onClick={() => props.removeTodo(props.id)}> X </button>
+    </span>
+  </li>
 );
 
-export default todo;
+export default Todo;
