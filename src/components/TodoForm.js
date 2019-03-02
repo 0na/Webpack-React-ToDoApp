@@ -17,7 +17,7 @@ const TodoForm = props => {
         className='AddTodo_input'
         ref={node => (input = node)}
       />{" "}
-      <input type='submit' className='AddTodo_submit' value='Add' />
+      <input type='submit' className='AddTodo_submit' value='Add a Task' />
     </form>
   );
 };

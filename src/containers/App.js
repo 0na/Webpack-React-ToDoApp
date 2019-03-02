@@ -27,10 +27,10 @@ class App extends Component {
       ]
     };
   }
-  addTodo(name) {
+  addTodo(value) {
     const Todo = {
       id: uuid.v4(),
-      text: name
+      text: value
     };
     this.setState({
       data: [...this.state.data, Todo]
@@ -44,12 +44,12 @@ class App extends Component {
   render() {
     return (
       <div className={style.TodoApp}>
-        <Title title={"Lista rzeczy do zrobienia"} />{" "}
-        <TodoForm addTodo={this.addTodo.bind(this)} />{" "}
+        <Title title={"Things to do"} />
         <TodoList
           data={this.state.data}
           removeTodo={this.removeTodo.bind(this)}
         />{" "}
+        <TodoForm addTodo={this.addTodo.bind(this)} />{" "}
       </div>
     );
   }

@@ -1,5 +1,5 @@
 import React from "react";
-import todo from "./Todo";
+import Todo from "./Todo";
 // import './TodoList.css';
 
 const TodoList = props => (
@@ -10,7 +10,7 @@ const TodoList = props => (
         key={i}
         id={data.id}
         name={data.text}
-        removeTodo={props.removetodo}
+        removeTodo={props.removeTodo}
       />
     ))}{" "}
   </ul>
