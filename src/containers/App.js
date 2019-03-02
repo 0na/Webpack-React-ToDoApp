@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import style from "./App.css";
 import uuid from "uuid";
 import Title from "../components/Title";
 import TodoList from "../components/TodoList";
-//import todo from "../components/Todo";
+import Todo from "../components/Todo";
 import TodoForm from "../components/TodoForm";
 
 class App extends Component {
@@ -27,10 +27,10 @@ class App extends Component {
       ]
     };
   }
-  addTodo(val) {
+  addTodo(name) {
     const Todo = {
-      text: val,
-      id: uuid.v4()
+      id: uuid.v4(),
+      text: name
     };
     this.setState({
       data: [...this.state.data, Todo]
