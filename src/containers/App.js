@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import style from "./App.css";
 import uuid from "uuid";
 import Title from "../components/Title";
+import TodoForm from "../components/TodoForm";
 import TodoList from "../components/TodoList";
 import Todo from "../components/Todo";
-import TodoForm from "../components/TodoForm";
 
 class App extends Component {
   constructor(props) {
@@ -27,10 +27,10 @@ class App extends Component {
       ]
     };
   }
-  addTodo(value) {
+  addTodo(val) {
     const Todo = {
-      id: uuid.v4(),
-      text: value
+      text: val,
+      id: uuid.v4()
     };
     this.setState({
       data: [...this.state.data, Todo]
@@ -44,12 +44,12 @@ class App extends Component {
   render() {
     return (
       <div className={style.TodoApp}>
-        <Title title={"Things to do"} />
+        <Title title={"Things to do"} />{" "}
+        <TodoForm addTodo={this.addTodo.bind(this)} />{" "}
         <TodoList
           data={this.state.data}
           removeTodo={this.removeTodo.bind(this)}
         />{" "}
-        <TodoForm addTodo={this.addTodo.bind(this)} />{" "}
       </div>
     );
   }

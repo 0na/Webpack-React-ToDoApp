@@ -3,12 +3,13 @@ import React from "react";
 
 const Todo = props => (
   <li className='Todo'>
-    <span className='TodoName'> {props.name} </span>{" "}
-    <span className='TodoButton'>
-      {" "}
+    <span> {props.name} </span>
+    <span>
       <button onClick={() => props.removeTodo(props.id)}> X </button>
     </span>
   </li>
 );
 
 export default Todo;
+
+//chyba ok, nie ruszac

@@ -6,7 +6,7 @@ const TodoList = props => (
   <ul className='TodoList'>
     {" "}
     {props.data.map((data, i) => (
-      <todo
+      <Todo
         key={i}
         id={data.id}
         name={data.text}
