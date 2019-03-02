@@ -1,7 +1,7 @@
 {
-    "presets": ["env", "react"]
+    "presets": ["env", "react"],
+    "plugins": ["react-hot-loader/babel"]
 }
-
 
 // {
 //     "presets": ["@babel/core", "@babel/preset-env", "@babel/preset-react", "@babel/preset-flow", "@babel/cli"]

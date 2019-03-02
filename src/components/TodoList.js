@@ -1,9 +1,9 @@
 import React from "react";
 import Todo from "./Todo";
-// import './TodoList.css';
+//import style from "./TodoList.css";
 
 const TodoList = props => (
-  <ul className='TodoList'>
+  <ul>
     {" "}
     {props.data.map((data, i) => (
       <Todo

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { hot } from "react-hot-loader";
 import style from "./App.css";
 import uuid from "uuid";
 import Title from "../components/Title";
@@ -14,15 +15,15 @@ class App extends Component {
       data: [
         {
           id: 1,
-          text: "clean room"
+          text: "Clean the room"
         },
         {
           id: 2,
-          text: "wash the dishes"
+          text: "Wash the dishes"
         },
         {
           id: 3,
-          text: "feed my cat"
+          text: "Feed my cat"
         }
       ]
     };
@@ -44,7 +45,7 @@ class App extends Component {
   render() {
     return (
       <div className={style.TodoApp}>
-        <Title title={"Things to do"} />{" "}
+        <Title title={"Things to do:"} />{" "}
         <TodoForm addTodo={this.addTodo.bind(this)} />{" "}
         <TodoList
           data={this.state.data}
@@ -55,4 +56,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default hot(module)(App);

@@ -1,6 +1,7 @@
 .TodoApp {
-    background-color: #F5F5F5;
+    background-color: #dbffbf;
     color: #222;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -9,4 +10,24 @@
     align-content: center;
     width: 100vw;
     height: 100vh;
+}
+
+
+
+button {
+    width: 10px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+
+li.Todo {
+    display: block;
+    text-decoration: none;
+    color: green;
 }
