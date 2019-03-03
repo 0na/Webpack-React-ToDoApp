@@ -1,5 +1,9 @@
-import React, { Component } from "react";
-import { hot } from "react-hot-loader";
+import React, {
+  Component
+} from "react";
+import {
+  hot
+} from "react-hot-loader";
 import style from "./App.css";
 import uuid from "uuid";
 import Title from "../components/Title";
@@ -12,8 +16,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      data: [
-        {
+      data: [{
           id: 1,
           text: "Clean the room"
         },
@@ -43,15 +46,27 @@ class App extends Component {
     });
   }
   render() {
-    return (
-      <div className={style.TodoApp}>
-        <Title title={"Things to do:"} />{" "}
-        <TodoForm addTodo={this.addTodo.bind(this)} />{" "}
-        <TodoList
-          data={this.state.data}
-          removeTodo={this.removeTodo.bind(this)}
-        />{" "}
-      </div>
+    return ( <
+      div className = {
+        style.TodoApp
+      } >
+      <
+      Title title = {
+        "Things to do:"
+      }
+      /> <
+      TodoForm addTodo = {
+        this.addTodo.bind(this)
+      }
+      /> <
+      TodoList data = {
+        this.state.data
+      }
+      removeTodo = {
+        this.removeTodo.bind(this)
+      }
+      /> <
+      /div>
     );
   }
 }

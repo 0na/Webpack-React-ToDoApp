@@ -10,15 +10,23 @@ const TodoForm = props => {
     input.value = "";
   };
 
-  return (
-    <form className='AddTodo' onSubmit={onSubmit}>
-      <input
-        type='text'
-        className='AddTodo_input'
-        ref={node => (input = node)}
-      />{" "}
-      <input type='submit' className='AddTodo_submit' value='Add a Task' />
-    </form>
+  return ( <
+    form className = 'AddTodo'
+    onSubmit = {
+      onSubmit
+    } >
+    <
+    input type = 'text'
+    className = 'AddTodo_input'
+    ref = {
+      node => (input = node)
+    }
+    /> <
+    input type = 'submit'
+    className = 'AddTodo_submit'
+    value = 'Add a Task' / >
+    <
+    /form>
   );
 };
 
